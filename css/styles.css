@@ -1,0 +1,172 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Hedvig Letters Sans', sans-serif;
+}
+
+h1, h2, h3, p {
+    color: #212529;
+}
+
+a {
+    color: #212529;
+    text-decoration: none;
+    transition: .3s;
+}
+
+a:hover {
+    color: #6C757D;
+}
+
+#default-btn {
+    background-color: #A98467;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+#default-btn:hover {
+    background-color: #a48164;
+    color: #d5d1d1;
+}
+
+/* Body layout */
+.main-container {
+    background-color: #F0EAD2;
+    display: grid;
+    grid-template-areas:
+        'header'
+        'content'
+        'footer'
+}
+
+#header {
+    justify-content: start;
+    grid-area: header;
+    background-color: #ADC178;
+}
+
+#content {
+    grid-area: content;
+}
+
+#footer {
+    grid-area: footer;
+}
+
+/* Header */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo-img {
+    height: 60px;
+    width: 60px;
+}
+
+#nav-links {
+    display: flex;
+    list-style: none;
+}
+
+#nav-links li {
+    padding-right: 15px;
+}
+
+#nav-links a {
+    text-transform: capitalize;
+}
+
+/* Content */
+/* Banner */
+#banner-container {
+    background-image: url(../img/banner.avif);
+    background-size: cover;
+    background-position: fixed;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+#main-banner-text {
+    margin-left: 15px;
+}
+
+/* Services */
+#services-preview-container{
+    padding: 2rem 0;
+}
+
+#services-preview-container ul {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+#services-preview-container li {
+    flex: 1 1 200px;
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+    background-color: #F8F9FA;
+    border-radius: 50px;
+}
+
+#services-prewview-container h3 {
+    font-size: 30px;
+}
+
+.fas {
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
+.fa-house {
+    color: #d62828;
+}
+
+.fa-paw {
+    color: #F77F00;
+}
+
+.fa-clock {
+    color: #003049;
+}
+
+#about-us {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#about-us-container {
+    display: flex;
+    align-items: center;
+    background-color: #F8F9FA;
+    height: 260px;
+    border-radius: 50px;
+}
+
+#about-us-text {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+#about-us-text h3 {
+    text-transform: capitalize;
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+#about-us-image img{
+    height: 200px;
+    padding-right: 20px;
+}
