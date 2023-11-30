@@ -41,7 +41,7 @@ a:hover {
         'footer'
 }
 
-#header {
+header {
     justify-content: start;
     grid-area: header;
     background-color: #ADC178;
@@ -83,7 +83,7 @@ nav {
 }
 
 #nav-links li {
-    padding-right: 15px;
+    padding-right: 20px;
 }
 
 #nav-links a {
@@ -249,24 +249,34 @@ nav {
     padding: 0 0 px 0;
 }
 
-#contact-container form {
-    margin: 15px 15px 15px 15px;
+/* Footer */
+footer {
+    color: #6c584c;
+    display: block;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 15px;
 }
 
-#contact-container input,
-#contact-container textarea {
-    border: 1px solid #A98467;
+#line {
+    margin: 0 10% 0 10%;
+    border-top: 1px solid #a98467;
 }
 
-#contact-container input {
-    display: inline-flex;
-    padding: 5px;
-    width: 45%;
-    margin-bottom: 15px;
-}
-
-#contact-container textarea {
+#dog {
     display: flex;
-    margin-bottom: 15px;
-    width: 90% ;
+    justify-content: center;
+    position: absolute;
+    background-color: #F0EAD2;
+    margin-top: -12px;
+    margin-left: 50%;
+    padding: 3px 3px;
 }
+
+#footer-text p {
+    color: #6c584c;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
